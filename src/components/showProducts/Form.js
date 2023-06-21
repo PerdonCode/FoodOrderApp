@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { FormDataContext } from "../storeData/storeProvider"; 
 
-const Form = () => {
+const Form = (props) => {
+    const {name, price} = props;
+    const { formData, updateFormData } = useContext(FormDataContext);
   const [amount, setAmount] = useState(0);
   const minValue = 0;
 
@@ -22,7 +25,10 @@ const Form = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    alert("You clicked the button");
+    if(amount > 0){
+        updateFormData({ [name]: {name, price, amount} });
+    }
+    console.log(formData);
   }
 
   return (

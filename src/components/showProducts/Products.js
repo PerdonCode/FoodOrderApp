@@ -8,7 +8,7 @@ const Products = (props) => {
         <h1>{props.meal.name}</h1>
         <span>{props.meal.description}</span>
         <p>{props.meal.price}</p>
-        <Form />
+        <Form name={props.meal.name} description={props.meal.description} price={props.meal.price} />
      </div>
     </div>
    
