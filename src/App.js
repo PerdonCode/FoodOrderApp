@@ -1,11 +1,15 @@
-import './App.css';
+import "./App.css";
+import ShopInformation from "./components/ShopInformation/ShopInformation";
+import Head from "./components/header/Head";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
+    <div className="container">
+      <Head />
+      <div className="background" />
+      <div className="shopInformation">
+        <ShopInformation />
+      </div>
     </div>
   );
 }

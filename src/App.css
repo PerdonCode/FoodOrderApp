@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.background {
+    width: 100%;
+    height:60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../public/meals.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: skewY(-8deg);
+    transform-origin: top left;
+    z-index: -1;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .shopInformation {
+    width: 50%;
+    margin: auto; /* Center horizontally */
+    margin-top: 200px; /* Add margin at the top */
+    background-color: rgb(59, 57, 57);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
