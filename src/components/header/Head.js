@@ -25,7 +25,7 @@ const Head = () => {
 
         
       </div>{showCard
-        && <div className={showDiv}><ShowCard/>
+        && <div className={styles.showDiv}><ShowCard/>
         <button onClick={handleCloseButton}>close</button></div>}
     </header>
   );
